@@ -50,10 +50,10 @@
       </a>
     </div>
     <div class="hero__stats">
-      <div class="stat"><span class="stat__num">5+</span><span class="stat__label">Años de experiencia</span></div>
-      <div class="stat"><span class="stat__num">12+</span><span class="stat__label">Proyectos entregados</span></div>
-      <div class="stat"><span class="stat__num">680+</span><span class="stat__label">Familias felices</span></div>
-      <div class="stat"><span class="stat__num">98%</span><span class="stat__label">Satisfacción</span></div>
+      <div class="stat"><span class="stat__num" data-count="5" data-suffix="+">5+</span><span class="stat__label">Años de experiencia</span></div>
+      <div class="stat"><span class="stat__num" data-count="12" data-suffix="+">12+</span><span class="stat__label">Proyectos entregados</span></div>
+      <div class="stat"><span class="stat__num" data-count="680" data-suffix="+">680+</span><span class="stat__label">Familias felices</span></div>
+      <div class="stat"><span class="stat__num" data-count="98" data-suffix="%">98%</span><span class="stat__label">Satisfacción</span></div>
     </div>
   </div>
   <a href="#nosotros" class="hero__scroll">
@@ -125,13 +125,23 @@
       <h2 class="section__title section__title--light">Nuestros proyectos</h2>
       <p class="section__sub section__sub--light">Departamentos disponibles para entrega inmediata y en preventa en Lima.</p>
     </div>
+    <!-- FILTROS -->
+    <div class="project-filters">
+      <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="jesus-maria">Jesús María</button>
+      <button class="filter-btn" data-filter="san-borja">San Borja</button>
+      <button class="filter-btn" data-filter="miraflores">Miraflores</button>
+      <button class="filter-btn" data-filter="entrega">Entrega inmediata</button>
+      <button class="filter-btn" data-filter="preventa">Preventa</button>
+    </div>
     <div class="projects__grid">
 
-      <div class="project-card project-card--featured">
-        <div class="project-card__img-wrap">
+      <div class="project-card project-card--featured" data-district="jesus-maria" data-status="entrega">
+        <div class="project-card__img-wrap" onclick="openLightbox(this)">
           <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80" alt="Residencial Pacífico" />
           <span class="project-card__badge">Entrega inmediata</span>
           <span class="project-card__badge project-card__badge--alert">4 últimos depas</span>
+          <div class="img-zoom-hint">Ver fotos</div>
         </div>
         <div class="project-card__body">
           <p class="project-card__district">Jesús María</p>
@@ -149,10 +159,11 @@
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-card__img-wrap">
+      <div class="project-card" data-district="san-borja" data-status="preventa">
+        <div class="project-card__img-wrap" onclick="openLightbox(this)">
           <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Proyecto San Borja" />
           <span class="project-card__badge project-card__badge--green">Preventa</span>
+          <div class="img-zoom-hint">Ver fotos</div>
         </div>
         <div class="project-card__body">
           <p class="project-card__district">San Borja</p>
@@ -170,10 +181,11 @@
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-card__img-wrap">
+      <div class="project-card" data-district="miraflores" data-status="preventa">
+        <div class="project-card__img-wrap" onclick="openLightbox(this)">
           <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Proyecto Miraflores" />
           <span class="project-card__badge project-card__badge--green">Preventa</span>
+          <div class="img-zoom-hint">Ver fotos</div>
         </div>
         <div class="project-card__body">
           <p class="project-card__district">Miraflores</p>
@@ -260,6 +272,83 @@
       <div class="finance__card">
         <h4>Cuota inicial flexible</h4>
         <p>Separa desde S/ 5,000 y paga la cuota inicial en cómodas partes durante la construcción.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ SIMULADOR ═══ -->
+<section class="section" id="simulador">
+  <div class="container">
+    <div class="section__header reveal">
+      <p class="section__tag">Herramienta</p>
+      <h2 class="section__title">Simula tu cuota mensual</h2>
+      <p class="section__sub">Calcula cuánto pagarías al mes según el precio del departamento y tu cuota inicial.</p>
+    </div>
+    <div class="simulator reveal">
+      <div class="simulator__inputs">
+        <div class="sim__group">
+          <label>Precio del departamento</label>
+          <div class="sim__input-wrap">
+            <span class="sim__prefix">S/</span>
+            <input type="number" id="simPrecio" value="350000" min="100000" max="2000000" step="10000" oninput="calcSim()">
+          </div>
+          <input type="range" id="simPrecioRange" min="100000" max="2000000" step="10000" value="350000" oninput="syncRange('simPrecio','simPrecioRange');calcSim()">
+          <div class="sim__range-labels"><span>S/ 100k</span><span>S/ 2M</span></div>
+        </div>
+        <div class="sim__group">
+          <label>Cuota inicial</label>
+          <div class="sim__input-wrap">
+            <span class="sim__prefix">%</span>
+            <input type="number" id="simCuota" value="20" min="10" max="50" step="1" oninput="calcSim()">
+          </div>
+          <input type="range" id="simCuotaRange" min="10" max="50" step="1" value="20" oninput="syncRange('simCuota','simCuotaRange');calcSim()">
+          <div class="sim__range-labels"><span>10%</span><span>50%</span></div>
+        </div>
+        <div class="sim__group">
+          <label>Plazo del crédito</label>
+          <div class="sim__input-wrap">
+            <span class="sim__prefix">años</span>
+            <input type="number" id="simPlazo" value="20" min="5" max="25" step="1" oninput="calcSim()">
+          </div>
+          <input type="range" id="simPlazoRange" min="5" max="25" step="1" value="20" oninput="syncRange('simPlazo','simPlazoRange');calcSim()">
+          <div class="sim__range-labels"><span>5 años</span><span>25 años</span></div>
+        </div>
+        <div class="sim__group">
+          <label>Tasa de interés anual</label>
+          <div class="sim__input-wrap">
+            <span class="sim__prefix">%</span>
+            <input type="number" id="simTasa" value="9.5" min="6" max="15" step="0.1" oninput="calcSim()">
+          </div>
+          <input type="range" id="simTasaRange" min="6" max="15" step="0.1" value="9.5" oninput="syncRange('simTasa','simTasaRange');calcSim()">
+          <div class="sim__range-labels"><span>6%</span><span>15%</span></div>
+        </div>
+      </div>
+      <div class="simulator__result">
+        <div class="sim__result-main">
+          <span class="sim__result-label">Cuota mensual estimada</span>
+          <span class="sim__result-num" id="simCuotaMes">S/ 0</span>
+        </div>
+        <div class="sim__result-breakdown">
+          <div class="sim__breakdown-item">
+            <span>Precio total</span>
+            <strong id="simTotal">—</strong>
+          </div>
+          <div class="sim__breakdown-item">
+            <span>Cuota inicial</span>
+            <strong id="simInicial">—</strong>
+          </div>
+          <div class="sim__breakdown-item">
+            <span>Monto a financiar</span>
+            <strong id="simFinanciar">—</strong>
+          </div>
+          <div class="sim__breakdown-item">
+            <span>Total a pagar (con intereses)</span>
+            <strong id="simTotalPagar">—</strong>
+          </div>
+        </div>
+        <p class="sim__disclaimer">*Cálculo referencial. Consulta con un asesor para condiciones exactas según tu perfil crediticio.</p>
+        <a href="https://wa.me/51941719172?text=Hola,%20simulé%20mi%20crédito%20y%20quiero%20asesoría%20personalizada" class="btn btn--gold btn--full" target="_blank" style="margin-top:1.2rem;justify-content:center">Hablar con un asesor</a>
       </div>
     </div>
   </div>
@@ -444,24 +533,42 @@
   </div>
 </footer>
 
+<!-- LIGHTBOX -->
+<div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center;padding:2rem" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="" style="max-width:90vw;max-height:85vh;border-radius:8px;object-fit:contain">
+  <button onclick="closeLightbox()" style="position:fixed;top:1.5rem;right:1.5rem;background:none;border:none;color:white;font-size:2rem;cursor:pointer;line-height:1">✕</button>
+</div>
+
+<!-- BARRA STICKY MOBILE -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="https://wa.me/51941719172?text=Hola,%20quiero%20información%20sobre%20departamentos" class="btn btn--gold" target="_blank" style="flex:1;justify-content:center">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.057 23.012a.5.5 0 00.611.638l5.34-1.399A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.028-1.383l-.36-.214-3.733.978.997-3.645-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+    Cotizar por WhatsApp
+  </a>
+  <a href="#proyectos" class="btn btn--outline-dark" style="flex:1;justify-content:center;border-color:#17243D;color:#17243D">Ver proyectos</a>
+</div>
+
 <!-- WhatsApp flotante -->
 <a href="https://wa.me/51941719172?text=Hola,%20quiero%20información%20sobre%20departamentos" class="wa-float" target="_blank" aria-label="WhatsApp">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.057 23.012a.5.5 0 00.611.638l5.34-1.399A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.028-1.383l-.36-.214-3.733.978.997-3.645-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
 </a>
 
 <script>
-// Nav scroll
+// ── Nav scroll
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('nav--scrolled', window.scrollY > 60);
+  // Sticky mobile CTA aparece después de 400px
+  const sc = document.getElementById('stickyCta');
+  if(sc) sc.classList.toggle('sticky-cta--visible', window.scrollY > 400);
 });
 
-// Burger
+// ── Burger
 document.getElementById('burger').addEventListener('click', () => {
   document.getElementById('navLinks').classList.toggle('nav__links--open');
 });
 
-// Smooth scroll
+// ── Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const target = document.querySelector(a.getAttribute('href'));
@@ -469,7 +576,96 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// Form submit → WhatsApp
+// ── Scroll reveal
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(en => { if(en.isIntersecting) { en.target.classList.add('visible'); revealObs.unobserve(en.target); }});
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal, .project-card, .step, .testimonial, .finance__card, .pillar').forEach(el => {
+  el.classList.add('reveal');
+  revealObs.observe(el);
+});
+
+// ── Animated counters
+const countObs = new IntersectionObserver((entries) => {
+  entries.forEach(en => {
+    if(!en.isIntersecting) return;
+    const el = en.target;
+    const target = parseFloat(el.dataset.count);
+    const suffix = el.dataset.suffix || '';
+    const isFloat = el.dataset.float;
+    const start = performance.now();
+    const duration = 1600;
+    const tick = (now) => {
+      const p = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      const val = target * ease;
+      el.textContent = (isFloat ? val.toFixed(1) : Math.round(val)) + suffix;
+      if(p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+    countObs.unobserve(el);
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
+
+// ── Filtro de proyectos
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('filter-btn--active'));
+    btn.classList.add('filter-btn--active');
+    const f = btn.dataset.filter;
+    document.querySelectorAll('.project-card').forEach(card => {
+      const show = f === 'all' || card.dataset.district === f || card.dataset.status === f;
+      card.style.display = show ? '' : 'none';
+      card.style.opacity = show ? '1' : '0';
+    });
+  });
+});
+
+// ── Lightbox
+function openLightbox(wrap) {
+  const img = wrap.querySelector('img');
+  document.getElementById('lightbox-img').src = img.src.replace('w=600','w=1200').replace('w=800','w=1200');
+  const lb = document.getElementById('lightbox');
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLightbox(); });
+
+// ── Simulador de crédito
+function syncRange(inputId, rangeId) {
+  document.getElementById(rangeId).value = document.getElementById(inputId).value;
+  document.getElementById(inputId).value = document.getElementById(rangeId).value;
+}
+function fmtSol(n) { return 'S/ ' + Math.round(n).toLocaleString('es-PE'); }
+function calcSim() {
+  const precio   = parseFloat(document.getElementById('simPrecio').value) || 0;
+  const pctInicial = parseFloat(document.getElementById('simCuota').value) || 20;
+  const plazo    = parseFloat(document.getElementById('simPlazo').value) || 20;
+  const tasaAnual = parseFloat(document.getElementById('simTasa').value) || 9.5;
+  const inicial  = precio * pctInicial / 100;
+  const monto    = precio - inicial;
+  const r        = (tasaAnual / 100) / 12;
+  const n        = plazo * 12;
+  const cuota    = monto > 0 && r > 0 ? monto * r * Math.pow(1+r,n) / (Math.pow(1+r,n)-1) : 0;
+  document.getElementById('simCuotaMes').textContent  = fmtSol(cuota) + '/mes';
+  document.getElementById('simTotal').textContent     = fmtSol(precio);
+  document.getElementById('simInicial').textContent   = fmtSol(inicial) + ` (${pctInicial}%)`;
+  document.getElementById('simFinanciar').textContent = fmtSol(monto);
+  document.getElementById('simTotalPagar').textContent= fmtSol(cuota * n + inicial);
+  // sync ranges
+  document.getElementById('simPrecioRange').value = precio;
+  document.getElementById('simCuotaRange').value  = pctInicial;
+  document.getElementById('simPlazoRange').value  = plazo;
+  document.getElementById('simTasaRange').value   = tasaAnual;
+}
+calcSim();
+
+// ── Form submit → WhatsApp
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const nombre = this.querySelector('input[type=text]').value;
