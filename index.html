@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Grupo Arca — Constructora e Inmobiliaria | Lima, Perú</title>
-  <meta name="description" content="Grupo Arca Contratistas Generales SAC. Departamentos de calidad en Lima. Jesús María, Miraflores, San Borja. Financiamiento disponible." />
+  <meta name="description" content="Grupo Arca Contratistas Generales SAC. Departamentos de calidad en Lima. Jesús María, financiamiento con Scotiabank, BCP, Interbank y MiVivienda." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════ NAV ═══ -->
+<!-- ═══════════════════════════════════ NAV ═══ -->
 <nav class="nav" id="nav">
   <div class="container nav__inner">
     <a href="#" class="nav__logo">
-      <span class="logo-icon">A</span>
-      <span class="logo-text">GRUPO <strong>ARCA</strong></span>
+      <div class="logo-mark">A</div>
+      <div class="logo-text">GRUPO <strong>ARCA</strong></div>
     </a>
     <ul class="nav__links" id="navLinks">
       <li><a href="#nosotros">Nosotros</a></li>
@@ -24,7 +24,7 @@
       <li><a href="#proceso">Cómo comprar</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <a href="https://wa.me/51941719172?text=Hola,%20quiero%20información%20sobre%20departamentos" class="btn btn--gold" target="_blank">
+    <a href="https://wa.me/51941719172?text=Hola,%20quiero%20información%20sobre%20departamentos" class="btn btn--gold nav__cta" target="_blank">
       Cotizar ahora
     </a>
     <button class="nav__burger" id="burger" aria-label="Menú">
@@ -33,83 +33,121 @@
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════════════ HERO ═══ -->
-<section class="hero">
-  <div class="hero__bg">
+<!-- ═══════════════════════════════════ HERO ═══ -->
+<section class="hero" id="inicio">
+  <div class="hero__media">
+    <img
+      src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=85"
+      alt="Edificio moderno Grupo Arca Lima"
+      class="hero__img"
+      loading="eager"
+    />
     <div class="hero__overlay"></div>
   </div>
+
   <div class="container hero__content">
-    <p class="hero__tag">Constructora e Inmobiliaria · Lima, Perú</p>
-    <h1 class="hero__title">Tu hogar ideal<br /><em>ya existe.</em></h1>
-    <p class="hero__sub">Departamentos propios con acabados de primera en los mejores distritos de Lima. Financiamiento con los principales bancos del país.</p>
+    <p class="hero__eyebrow">Constructora e Inmobiliaria · Lima, Perú</p>
+    <h1 class="hero__h1">
+      Tu hogar ideal<br /><em>ya existe.</em>
+    </h1>
+    <p class="hero__sub">
+      Departamentos propios con acabados de primera en los mejores distritos de Lima.<br />
+      Financiamiento con los principales bancos del país.
+    </p>
     <div class="hero__ctas">
       <a href="#proyectos" class="btn btn--gold btn--lg">Ver proyectos</a>
-      <a href="https://wa.me/51941719172" class="btn btn--outline btn--lg" target="_blank">
+      <a href="https://wa.me/51941719172" class="btn btn--glass btn--lg" target="_blank">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.057 23.012a.5.5 0 00.611.638l5.34-1.399A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.028-1.383l-.36-.214-3.733.978.997-3.645-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
-        Escribir por WhatsApp
+        WhatsApp
       </a>
     </div>
-    <div class="hero__stats">
-      <div class="stat"><span class="stat__num" data-count="5" data-suffix="+">5+</span><span class="stat__label">Años de experiencia</span></div>
-      <div class="stat"><span class="stat__num" data-count="12" data-suffix="+">12+</span><span class="stat__label">Proyectos entregados</span></div>
-      <div class="stat"><span class="stat__num" data-count="680" data-suffix="+">680+</span><span class="stat__label">Familias felices</span></div>
-      <div class="stat"><span class="stat__num" data-count="98" data-suffix="%">98%</span><span class="stat__label">Satisfacción</span></div>
-    </div>
   </div>
-  <a href="#nosotros" class="hero__scroll">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-  </a>
+
+  <div class="hero__wave">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,45 C240,90 480,0 720,45 C960,90 1200,0 1440,45 L1440,90 L0,90 Z" fill="#ffffff"/>
+    </svg>
+  </div>
 </section>
 
-<!-- ═══════════════════════════════════════════ NOSOTROS ═══ -->
+<!-- ═══════════════════════════════════ STATS BAND ═══ -->
+<div class="stats-band">
+  <div class="container stats-band__grid">
+    <div class="stat-item">
+      <span class="stat-item__num" data-count="5" data-suffix="+">5+</span>
+      <span class="stat-item__label">Años de experiencia</span>
+    </div>
+    <div class="stat-item__divider"></div>
+    <div class="stat-item">
+      <span class="stat-item__num" data-count="12" data-suffix="+">12+</span>
+      <span class="stat-item__label">Proyectos entregados</span>
+    </div>
+    <div class="stat-item__divider"></div>
+    <div class="stat-item">
+      <span class="stat-item__num" data-count="680" data-suffix="+">680+</span>
+      <span class="stat-item__label">Familias felices</span>
+    </div>
+    <div class="stat-item__divider"></div>
+    <div class="stat-item">
+      <span class="stat-item__num" data-count="98" data-suffix="%">98%</span>
+      <span class="stat-item__label">Satisfacción</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ NOSOTROS ═══ -->
 <section class="section" id="nosotros">
-  <div class="container grid-2">
-    <div class="about__img-wrap">
-      <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80" alt="Edificio Grupo Arca" class="about__img" />
-      <div class="about__badge">
-        <span class="badge__num">5</span>
-        <span class="badge__text">años construyendo sueños</span>
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__img-col reveal">
+        <div class="about__img-wrap">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80" alt="Edificio Grupo Arca" class="about__img" />
+          <div class="about__badge">
+            <span class="badge__num">5</span>
+            <span class="badge__text">años construyendo sueños</span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="about__text">
-      <p class="section__tag">Quiénes somos</p>
-      <h2 class="section__title">Construimos hogares,<br />no solo departamentos.</h2>
-      <p class="about__desc">Somos Grupo Arca Contratistas Generales SAC, una empresa peruana con más de 5 años de experiencia desarrollando proyectos inmobiliarios propios en Lima. Cada departamento que construimos lleva nuestra firma de calidad, diseño y compromiso con las familias peruanas.</p>
-      <div class="pillars">
-        <div class="pillar">
-          <div class="pillar__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div class="about__text reveal">
+        <p class="section__tag">Quiénes somos</p>
+        <h2 class="section__title">Construimos hogares,<br />no solo departamentos.</h2>
+        <p class="about__desc">Somos <strong>Grupo Arca Contratistas Generales SAC</strong>, una empresa peruana con más de 5 años de experiencia desarrollando proyectos inmobiliarios propios en Lima. Cada departamento que construimos lleva nuestra firma de calidad, diseño y compromiso con las familias peruanas.</p>
+        <div class="pillars">
+          <div class="pillar reveal">
+            <div class="pillar__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4>Calidad garantizada</h4>
+              <p>Acabados de primera con materiales certificados y supervisión técnica permanente.</p>
+            </div>
           </div>
-          <div>
-            <h4>Calidad garantizada</h4>
-            <p>Acabados de primera con materiales certificados.</p>
+          <div class="pillar reveal">
+            <div class="pillar__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h4>Entrega puntual</h4>
+              <p>Cumplimos los plazos comprometidos porque tu tiempo es tan valioso como el nuestro.</p>
+            </div>
           </div>
-        </div>
-        <div class="pillar">
-          <div class="pillar__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <div class="pillar reveal">
+            <div class="pillar__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <h4>Acompañamiento total</h4>
+              <p>Te asesoramos desde la primera cotización hasta la entrega de llaves.</p>
+            </div>
           </div>
-          <div>
-            <h4>Entrega puntual</h4>
-            <p>Cumplimos los plazos de entrega comprometidos.</p>
-          </div>
-        </div>
-        <div class="pillar">
-          <div class="pillar__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <div>
-            <h4>Acompañamiento total</h4>
-            <p>Te asesoramos desde la cotización hasta la entrega.</p>
-          </div>
-        </div>
-        <div class="pillar">
-          <div class="pillar__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <div>
-            <h4>Ubicaciones premium</h4>
-            <p>Proyectos en los distritos más cotizados de Lima.</p>
+          <div class="pillar reveal">
+            <div class="pillar__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <h4>Ubicaciones prime</h4>
+              <p>Proyectos en los distritos más cotizados y con mayor plusvalía de Lima.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -117,16 +155,16 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════ PROYECTOS ═══ -->
+<!-- ═══════════════════════════════════ PROYECTOS ═══ -->
 <section class="section section--dark" id="proyectos">
   <div class="container">
-    <div class="section__header">
+    <div class="section__header reveal">
       <p class="section__tag section__tag--light">Portafolio</p>
       <h2 class="section__title section__title--light">Nuestros proyectos</h2>
       <p class="section__sub section__sub--light">Departamentos disponibles para entrega inmediata y en preventa en Lima.</p>
     </div>
-    <!-- FILTROS -->
-    <div class="project-filters">
+
+    <div class="project-filters reveal">
       <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
       <button class="filter-btn" data-filter="jesus-maria">Jesús María</button>
       <button class="filter-btn" data-filter="san-borja">San Borja</button>
@@ -134,39 +172,50 @@
       <button class="filter-btn" data-filter="entrega">Entrega inmediata</button>
       <button class="filter-btn" data-filter="preventa">Preventa</button>
     </div>
+
     <div class="projects__grid">
 
-      <div class="project-card project-card--featured" data-district="jesus-maria" data-status="entrega">
-        <div class="project-card__img-wrap" onclick="openLightbox(this)">
-          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80" alt="Residencial Pacífico" />
+      <div class="project-card project-card--featured reveal" data-district="jesus-maria" data-status="entrega">
+        <div class="project-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80" alt="Residencial Pacífico" />
+          <div class="project-card__img-overlay">
+            <button class="btn btn--gold" onclick="openLightbox(this.closest('.project-card__img-wrap'))">Ver fotos</button>
+          </div>
           <span class="project-card__badge">Entrega inmediata</span>
           <span class="project-card__badge project-card__badge--alert">4 últimos depas</span>
-          <div class="img-zoom-hint">Ver fotos</div>
         </div>
         <div class="project-card__body">
-          <p class="project-card__district">Jesús María</p>
+          <p class="project-card__district">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Jesús María
+          </p>
           <h3 class="project-card__name">Residencial Pacífico</h3>
           <p class="project-card__desc">Departamentos de 1 a 3 dormitorios con opción Duplex y Triplex. Financiamiento con Scotiabank.</p>
           <div class="project-card__features">
-            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg> 1–3 dorm.</span>
-            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> Duplex / Triplex</span>
-            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> Entrega ya</span>
+            <span>1–3 dorm.</span>
+            <span>Duplex / Triplex</span>
+            <span>Entrega ya</span>
           </div>
           <div class="project-card__footer">
             <div class="project-card__price">Desde <strong>S/ 350,000</strong></div>
-            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20Residencial%20Pacífico" class="btn btn--gold" target="_blank">Ver detalles</a>
+            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20Residencial%20Pacífico%20en%20Jesús%20María" class="btn btn--gold" target="_blank">Ver detalles</a>
           </div>
         </div>
       </div>
 
-      <div class="project-card" data-district="san-borja" data-status="preventa">
-        <div class="project-card__img-wrap" onclick="openLightbox(this)">
-          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Proyecto San Borja" />
+      <div class="project-card reveal" data-district="san-borja" data-status="preventa">
+        <div class="project-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=80" alt="Edificio Arca Premium San Borja" />
+          <div class="project-card__img-overlay">
+            <button class="btn btn--gold" onclick="openLightbox(this.closest('.project-card__img-wrap'))">Ver fotos</button>
+          </div>
           <span class="project-card__badge project-card__badge--green">Preventa</span>
-          <div class="img-zoom-hint">Ver fotos</div>
         </div>
         <div class="project-card__body">
-          <p class="project-card__district">San Borja</p>
+          <p class="project-card__district">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            San Borja
+          </p>
           <h3 class="project-card__name">Edificio Arca Premium</h3>
           <p class="project-card__desc">Departamentos de 2 y 3 dormitorios con vista al parque. Lobby, ascensor y seguridad 24h.</p>
           <div class="project-card__features">
@@ -176,19 +225,24 @@
           </div>
           <div class="project-card__footer">
             <div class="project-card__price">Desde <strong>USD 145,000</strong></div>
-            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20Edificio%20Arca%20Premium" class="btn btn--outline-dark" target="_blank">Ver detalles</a>
+            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20Edificio%20Arca%20Premium%20en%20San%20Borja" class="btn btn--outline-gold" target="_blank">Ver detalles</a>
           </div>
         </div>
       </div>
 
-      <div class="project-card" data-district="miraflores" data-status="preventa">
-        <div class="project-card__img-wrap" onclick="openLightbox(this)">
-          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Proyecto Miraflores" />
+      <div class="project-card reveal" data-district="miraflores" data-status="preventa">
+        <div class="project-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&q=80" alt="Residencial Arca Miraflores" />
+          <div class="project-card__img-overlay">
+            <button class="btn btn--gold" onclick="openLightbox(this.closest('.project-card__img-wrap'))">Ver fotos</button>
+          </div>
           <span class="project-card__badge project-card__badge--green">Preventa</span>
-          <div class="img-zoom-hint">Ver fotos</div>
         </div>
         <div class="project-card__body">
-          <p class="project-card__district">Miraflores</p>
+          <p class="project-card__district">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Miraflores
+          </p>
           <h3 class="project-card__name">Residencial Arca Miraflores</h3>
           <p class="project-card__desc">Edificio boutique de 10 pisos con rooftop. Vista a la ciudad y al Parque Kennedy.</p>
           <div class="project-card__features">
@@ -198,7 +252,7 @@
           </div>
           <div class="project-card__footer">
             <div class="project-card__price">Desde <strong>USD 220,000</strong></div>
-            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20Residencial%20Arca%20Miraflores" class="btn btn--outline-dark" target="_blank">Ver detalles</a>
+            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20Residencial%20Arca%20Miraflores" class="btn btn--outline-gold" target="_blank">Ver detalles</a>
           </div>
         </div>
       </div>
@@ -207,69 +261,107 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════ PROCESO ═══ -->
+<!-- ═══════════════════════════════════ MID CTA ═══ -->
+<section class="mid-cta">
+  <div class="mid-cta__overlay"></div>
+  <div class="container mid-cta__content reveal">
+    <p class="mid-cta__tag">Habla con un especialista</p>
+    <h2 class="mid-cta__title">¿Listo para encontrar<br />tu nuevo hogar?</h2>
+    <p class="mid-cta__sub">Nuestros asesores te ayudan a encontrar el departamento ideal según tu presupuesto y necesidades. Sin compromiso.</p>
+    <div class="mid-cta__btns">
+      <a href="https://wa.me/51941719172?text=Hola,%20quiero%20información%20sobre%20departamentos%20disponibles" class="btn btn--gold btn--lg" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.057 23.012a.5.5 0 00.611.638l5.34-1.399A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.028-1.383l-.36-.214-3.733.978.997-3.645-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Escribir por WhatsApp
+      </a>
+      <a href="#simulador" class="btn btn--glass-dark btn--lg">Simular mi crédito</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ PROCESO ═══ -->
 <section class="section" id="proceso">
   <div class="container">
-    <div class="section__header">
+    <div class="section__header reveal">
       <p class="section__tag">Proceso de compra</p>
       <h2 class="section__title">Comprar tu depa es<br />más fácil de lo que crees.</h2>
     </div>
     <div class="steps">
-      <div class="step">
+      <div class="step reveal">
         <div class="step__num">01</div>
+        <div class="step__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
         <h3>Elige tu departamento</h3>
-        <p>Revisa nuestros proyectos disponibles y elige el que se adapta a tu presupuesto y estilo de vida.</p>
+        <p>Revisa nuestros proyectos y elige el que se adapta a tu presupuesto y estilo de vida.</p>
       </div>
-      <div class="step__arrow">→</div>
-      <div class="step">
+      <div class="step__connector"></div>
+      <div class="step reveal">
         <div class="step__num">02</div>
+        <div class="step__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
         <h3>Cotización personalizada</h3>
-        <p>Un asesor especializado te prepara una cotización con todas las opciones de financiamiento disponibles.</p>
+        <p>Un asesor especializado te prepara una propuesta con todas las opciones de financiamiento.</p>
       </div>
-      <div class="step__arrow">→</div>
-      <div class="step">
+      <div class="step__connector"></div>
+      <div class="step reveal">
         <div class="step__num">03</div>
+        <div class="step__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
         <h3>Separación y trámites</h3>
-        <p>Separa con una cuota mínima y nosotros te guiamos en el proceso bancario y documentario.</p>
+        <p>Separa con una cuota mínima. Te guiamos en el proceso bancario y documentario completo.</p>
       </div>
-      <div class="step__arrow">→</div>
-      <div class="step">
+      <div class="step__connector"></div>
+      <div class="step reveal">
         <div class="step__num">04</div>
+        <div class="step__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
         <h3>¡Recibe tu hogar!</h3>
-        <p>Hacemos la entrega oficial de tu departamento con todos los acabados prometidos. Bienvenido a casa.</p>
+        <p>Hacemos la entrega oficial con todos los acabados prometidos. Bienvenido a tu nuevo hogar.</p>
       </div>
     </div>
-    <div class="proceso__cta">
+    <div class="proceso__cta reveal">
       <a href="https://wa.me/51941719172?text=Hola,%20quiero%20iniciar%20el%20proceso%20de%20compra" class="btn btn--green btn--lg" target="_blank">Iniciar mi proceso de compra</a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════ FINANCIAMIENTO ═══ -->
-<section class="section section--light">
+<!-- ═══════════════════════════════════ FINANCIAMIENTO ═══ -->
+<section class="section section--light" id="financiamiento">
   <div class="container">
-    <div class="section__header">
+    <div class="section__header reveal">
       <p class="section__tag">Financiamiento</p>
       <h2 class="section__title">Trabajamos con los mejores bancos.</h2>
       <p class="section__sub">Accede a crédito hipotecario con tasas preferenciales a través de nuestros convenios bancarios.</p>
     </div>
-    <div class="banks">
+    <div class="banks reveal">
       <div class="bank">Scotiabank</div>
       <div class="bank">BCP</div>
       <div class="bank">Interbank</div>
       <div class="bank">BBVA</div>
-      <div class="bank">Fondo MiVivienda</div>
+      <div class="bank">MiVivienda</div>
     </div>
     <div class="finance__cards">
-      <div class="finance__card">
+      <div class="finance__card reveal">
+        <div class="finance__card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        </div>
         <h4>Crédito Hipotecario</h4>
         <p>Financia hasta el 90% del valor del departamento a plazos de hasta 25 años.</p>
       </div>
-      <div class="finance__card">
+      <div class="finance__card reveal">
+        <div class="finance__card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
         <h4>Fondo MiVivienda</h4>
         <p>Accede al Bono del Buen Pagador y tasa de interés preferencial del Estado.</p>
       </div>
-      <div class="finance__card">
+      <div class="finance__card reveal">
+        <div class="finance__card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
         <h4>Cuota inicial flexible</h4>
         <p>Separa desde S/ 5,000 y paga la cuota inicial en cómodas partes durante la construcción.</p>
       </div>
@@ -277,11 +369,11 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════ SIMULADOR ═══ -->
+<!-- ═══════════════════════════════════ SIMULADOR ═══ -->
 <section class="section" id="simulador">
   <div class="container">
     <div class="section__header reveal">
-      <p class="section__tag">Herramienta</p>
+      <p class="section__tag">Herramienta gratuita</p>
       <h2 class="section__title">Simula tu cuota mensual</h2>
       <p class="section__sub">Calcula cuánto pagarías al mes según el precio del departamento y tu cuota inicial.</p>
     </div>
@@ -348,96 +440,117 @@
           </div>
         </div>
         <p class="sim__disclaimer">*Cálculo referencial. Consulta con un asesor para condiciones exactas según tu perfil crediticio.</p>
-        <a href="https://wa.me/51941719172?text=Hola,%20simulé%20mi%20crédito%20y%20quiero%20asesoría%20personalizada" class="btn btn--gold btn--full" target="_blank" style="margin-top:1.2rem;justify-content:center">Hablar con un asesor</a>
+        <a href="https://wa.me/51941719172?text=Hola,%20simulé%20mi%20crédito%20y%20quiero%20asesoría%20personalizada" class="btn btn--gold btn--full" target="_blank">Hablar con un asesor</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════ TESTIMONIOS ═══ -->
-<section class="section section--dark">
+<!-- ═══════════════════════════════════ TESTIMONIOS ═══ -->
+<section class="section section--dark" id="testimonios">
   <div class="container">
-    <div class="section__header">
+    <div class="section__header reveal">
       <p class="section__tag section__tag--light">Testimonios</p>
       <h2 class="section__title section__title--light">Lo que dicen nuestras familias.</h2>
     </div>
     <div class="testimonials">
-      <div class="testimonial">
-        <div class="testimonial__stars">★★★★★</div>
-        <p class="testimonial__text">"El proceso fue increíblemente fluido. El equipo de Grupo Arca nos acompañó en cada paso y el departamento superó todas nuestras expectativas. ¡Totalmente recomendados!"</p>
+      <div class="testimonial reveal">
+        <div class="testimonial__quote">"</div>
+        <p class="testimonial__text">El proceso fue increíblemente fluido. El equipo de Grupo Arca nos acompañó en cada paso y el departamento superó todas nuestras expectativas. ¡Totalmente recomendados!</p>
         <div class="testimonial__author">
           <div class="testimonial__avatar">MR</div>
           <div>
             <strong>María Rodríguez</strong>
-            <span>Residencial Pacífico, piso 4</span>
+            <span>Residencial Pacífico · piso 4</span>
           </div>
+          <div class="testimonial__stars">★★★★★</div>
         </div>
       </div>
-      <div class="testimonial">
-        <div class="testimonial__stars">★★★★★</div>
-        <p class="testimonial__text">"Buscamos departamento por meses y Grupo Arca fue la única empresa que realmente nos escuchó. Conseguimos el financiamiento con Scotiabank gracias a su asesoría. ¡Gracias!"</p>
+      <div class="testimonial reveal">
+        <div class="testimonial__quote">"</div>
+        <p class="testimonial__text">Buscamos departamento por meses y Grupo Arca fue la única empresa que realmente nos escuchó. Conseguimos el financiamiento con Scotiabank gracias a su asesoría. ¡Gracias!</p>
         <div class="testimonial__author">
           <div class="testimonial__avatar">CP</div>
           <div>
             <strong>Carlos y Patricia Mendoza</strong>
-            <span>Residencial Pacífico, piso 6</span>
+            <span>Residencial Pacífico · piso 6</span>
           </div>
+          <div class="testimonial__stars">★★★★★</div>
         </div>
       </div>
-      <div class="testimonial">
-        <div class="testimonial__stars">★★★★★</div>
-        <p class="testimonial__text">"Como inversión fue la mejor decisión. Compramos en preventa y el valor ya subió considerablemente. Los acabados son de primer nivel y el edificio tiene todo lo que necesitamos."</p>
+      <div class="testimonial reveal">
+        <div class="testimonial__quote">"</div>
+        <p class="testimonial__text">Como inversión fue la mejor decisión. Compramos en preventa y el valor ya subió considerablemente. Los acabados son de primer nivel y el edificio tiene todo lo que necesitamos.</p>
         <div class="testimonial__author">
           <div class="testimonial__avatar">JV</div>
           <div>
             <strong>Jorge Valdivia</strong>
-            <span>Edificio Arca Premium, San Borja</span>
+            <span>Edificio Arca Premium · San Borja</span>
           </div>
+          <div class="testimonial__stars">★★★★★</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════ CONTACTO ═══ -->
+<!-- ═══════════════════════════════════ CONTACTO ═══ -->
 <section class="section" id="contacto">
-  <div class="container grid-2 contact__grid">
-    <div class="contact__info">
+  <div class="container contact__layout">
+    <div class="contact__info reveal">
       <p class="section__tag">Contáctanos</p>
       <h2 class="section__title">Habla con un<br />asesor ahora.</h2>
       <p class="contact__desc">Nuestros asesores están disponibles de lunes a sábado de 9am a 7pm. También puedes escribirnos por WhatsApp en cualquier momento.</p>
       <div class="contact__items">
         <a href="https://wa.me/51941719172" class="contact__item contact__item--wa" target="_blank">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.057 23.012a.5.5 0 00.611.638l5.34-1.399A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.028-1.383l-.36-.214-3.733.978.997-3.645-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          <div class="contact__item-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.057 23.012a.5.5 0 00.611.638l5.34-1.399A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.028-1.383l-.36-.214-3.733.978.997-3.645-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          </div>
           <div>
             <strong>WhatsApp</strong>
             <span>941 719 172</span>
           </div>
         </a>
+        <a href="tel:+51998263141" class="contact__item" target="_blank">
+          <div class="contact__item-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.8 19.79 19.79 0 01.02 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <strong>Teléfono</strong>
+            <span>998 263 141 / 918 636 473</span>
+          </div>
+        </a>
         <a href="mailto:ventas@grupoarca.com.pe" class="contact__item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div class="contact__item-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
           <div>
             <strong>Email</strong>
             <span>ventas@grupoarca.com.pe</span>
           </div>
         </a>
         <div class="contact__item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="contact__item-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
           <div>
             <strong>Oficina</strong>
             <span>Jr. José Mariano Arce 221, Pueblo Libre, Lima</span>
           </div>
         </div>
         <div class="contact__item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <div class="contact__item-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
           <div>
-            <strong>Horario</strong>
-            <span>Lun–Sáb, 9:00am – 7:00pm</span>
+            <strong>Horario de atención</strong>
+            <span>Lunes a Sábado · 9:00am – 7:00pm</span>
           </div>
         </div>
       </div>
     </div>
-    <form class="contact__form" id="contactForm">
+
+    <form class="contact__form reveal" id="contactForm">
       <h3>Solicita información</h3>
       <div class="form__group">
         <label>Nombre completo</label>
@@ -473,51 +586,51 @@
         </div>
       </div>
       <button type="submit" class="btn btn--green btn--full">Enviar consulta</button>
-      <p class="form__note">Al enviar, aceptas que un asesor te contacte por WhatsApp.</p>
+      <p class="form__note">Al enviar, un asesor te contactará por WhatsApp dentro de las próximas horas.</p>
     </form>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════ FOOTER ═══ -->
+<!-- ═══════════════════════════════════ FOOTER ═══ -->
 <footer class="footer">
   <div class="container footer__inner">
     <div class="footer__brand">
-      <a href="#" class="nav__logo">
-        <span class="logo-icon">A</span>
-        <span class="logo-text" style="color:white">GRUPO <strong>ARCA</strong></span>
+      <a href="#" class="footer__logo">
+        <div class="logo-mark">A</div>
+        <div class="logo-text" style="color:white">GRUPO <strong>ARCA</strong></div>
       </a>
       <p>Construimos hogares con calidad, puntualidad y compromiso para las familias peruanas.</p>
       <div class="footer__social">
         <a href="#" aria-label="Facebook" target="_blank">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
         <a href="#" aria-label="Instagram" target="_blank">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
         </a>
         <a href="#" aria-label="TikTok" target="_blank">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.84 4.84 0 01-1.01-.07z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.84 4.84 0 01-1.01-.07z"/></svg>
         </a>
       </div>
     </div>
-    <div class="footer__links">
+    <div class="footer__col">
       <h4>Proyectos</h4>
       <ul>
-        <li><a href="#">Residencial Pacífico</a></li>
-        <li><a href="#">Edificio Arca Premium</a></li>
-        <li><a href="#">Residencial Miraflores</a></li>
+        <li><a href="#proyectos">Residencial Pacífico</a></li>
+        <li><a href="#proyectos">Edificio Arca Premium</a></li>
+        <li><a href="#proyectos">Residencial Miraflores</a></li>
       </ul>
     </div>
-    <div class="footer__links">
+    <div class="footer__col">
       <h4>Empresa</h4>
       <ul>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Cómo comprar</a></li>
-        <li><a href="#">Financiamiento</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#proceso">Cómo comprar</a></li>
+        <li><a href="#financiamiento">Financiamiento</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
-    <div class="footer__links">
-      <h4>Contacto directo</h4>
+    <div class="footer__col">
+      <h4>Contacto</h4>
       <ul>
         <li><a href="https://wa.me/51941719172">WhatsApp: 941 719 172</a></li>
         <li><a href="mailto:ventas@grupoarca.com.pe">ventas@grupoarca.com.pe</a></li>
@@ -527,25 +640,25 @@
   </div>
   <div class="footer__bottom">
     <div class="container">
-      <p>© 2025 Grupo Arca Contratistas Generales SAC. Todos los derechos reservados.</p>
-      <p>RUC: 20XXXXXXXXX | Hecho con ♥ en Lima, Perú</p>
+      <p>© 2026 Grupo Arca Contratistas Generales SAC. Todos los derechos reservados.</p>
+      <p>Lima, Perú</p>
     </div>
   </div>
 </footer>
 
 <!-- LIGHTBOX -->
-<div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center;padding:2rem" onclick="closeLightbox()">
-  <img id="lightbox-img" src="" alt="" style="max-width:90vw;max-height:85vh;border-radius:8px;object-fit:contain">
-  <button onclick="closeLightbox()" style="position:fixed;top:1.5rem;right:1.5rem;background:none;border:none;color:white;font-size:2rem;cursor:pointer;line-height:1">✕</button>
+<div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:9999;align-items:center;justify-content:center;padding:2rem" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="" style="max-width:90vw;max-height:85vh;border-radius:12px;object-fit:contain">
+  <button onclick="closeLightbox()" style="position:fixed;top:1.5rem;right:1.5rem;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;font-size:1.5rem;cursor:pointer;line-height:1;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center">✕</button>
 </div>
 
-<!-- BARRA STICKY MOBILE -->
+<!-- STICKY MOBILE BAR -->
 <div class="sticky-cta" id="stickyCta">
-  <a href="https://wa.me/51941719172?text=Hola,%20quiero%20información%20sobre%20departamentos" class="btn btn--gold" target="_blank" style="flex:1;justify-content:center">
+  <a href="https://wa.me/51941719172?text=Hola,%20quiero%20información%20sobre%20departamentos" class="btn btn--gold" target="_blank">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.057 23.012a.5.5 0 00.611.638l5.34-1.399A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.028-1.383l-.36-.214-3.733.978.997-3.645-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
-    Cotizar por WhatsApp
+    Cotizar
   </a>
-  <a href="#proyectos" class="btn btn--outline-dark" style="flex:1;justify-content:center;border-color:#17243D;color:#17243D">Ver proyectos</a>
+  <a href="#proyectos" class="btn btn--outline-dark">Ver proyectos</a>
 </div>
 
 <!-- WhatsApp flotante -->
@@ -554,52 +667,65 @@
 </a>
 
 <script>
-// ── Nav scroll
+// ── Nav
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('nav--scrolled', window.scrollY > 60);
-  // Sticky mobile CTA aparece después de 400px
   const sc = document.getElementById('stickyCta');
-  if(sc) sc.classList.toggle('sticky-cta--visible', window.scrollY > 400);
+  if(sc) sc.classList.toggle('sticky-cta--visible', window.scrollY > 500);
 });
 
 // ── Burger
 document.getElementById('burger').addEventListener('click', () => {
   document.getElementById('navLinks').classList.toggle('nav__links--open');
+  document.getElementById('burger').classList.toggle('burger--open');
+});
+
+// ── Close menu on link click
+document.querySelectorAll('.nav__links a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('nav__links--open');
+    document.getElementById('burger').classList.remove('burger--open');
+  });
 });
 
 // ── Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const target = document.querySelector(a.getAttribute('href'));
-    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    if (target) {
+      e.preventDefault();
+      const offset = 80;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
   });
 });
 
 // ── Scroll reveal
 const revealObs = new IntersectionObserver((entries) => {
-  entries.forEach(en => { if(en.isIntersecting) { en.target.classList.add('visible'); revealObs.unobserve(en.target); }});
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal, .project-card, .step, .testimonial, .finance__card, .pillar').forEach(el => {
-  el.classList.add('reveal');
-  revealObs.observe(el);
-});
+  entries.forEach(en => {
+    if(en.isIntersecting) {
+      en.target.classList.add('visible');
+      revealObs.unobserve(en.target);
+    }
+  });
+}, { threshold: 0.10 });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-// ── Animated counters
+// ── Animated counters (stats band)
 const countObs = new IntersectionObserver((entries) => {
   entries.forEach(en => {
     if(!en.isIntersecting) return;
     const el = en.target;
     const target = parseFloat(el.dataset.count);
     const suffix = el.dataset.suffix || '';
-    const isFloat = el.dataset.float;
+    const duration = 1800;
     const start = performance.now();
-    const duration = 1600;
     const tick = (now) => {
       const p = Math.min((now - start) / duration, 1);
       const ease = 1 - Math.pow(1 - p, 3);
-      const val = target * ease;
-      el.textContent = (isFloat ? val.toFixed(1) : Math.round(val)) + suffix;
+      el.textContent = Math.round(target * ease) + suffix;
       if(p < 1) requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);
@@ -608,7 +734,7 @@ const countObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
 
-// ── Filtro de proyectos
+// ── Filtro proyectos
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('filter-btn--active'));
@@ -617,7 +743,6 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     document.querySelectorAll('.project-card').forEach(card => {
       const show = f === 'all' || card.dataset.district === f || card.dataset.status === f;
       card.style.display = show ? '' : 'none';
-      card.style.opacity = show ? '1' : '0';
     });
   });
 });
@@ -625,7 +750,7 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 // ── Lightbox
 function openLightbox(wrap) {
   const img = wrap.querySelector('img');
-  document.getElementById('lightbox-img').src = img.src.replace('w=600','w=1200').replace('w=800','w=1200');
+  document.getElementById('lightbox-img').src = img.src.replace(/w=\d+/, 'w=1400');
   const lb = document.getElementById('lightbox');
   lb.style.display = 'flex';
   document.body.style.overflow = 'hidden';
@@ -636,28 +761,28 @@ function closeLightbox() {
 }
 document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLightbox(); });
 
-// ── Simulador de crédito
+// ── Simulador
 function syncRange(inputId, rangeId) {
-  document.getElementById(rangeId).value = document.getElementById(inputId).value;
-  document.getElementById(inputId).value = document.getElementById(rangeId).value;
+  const val = document.getElementById(rangeId).value || document.getElementById(inputId).value;
+  document.getElementById(rangeId).value = val;
+  document.getElementById(inputId).value = val;
 }
 function fmtSol(n) { return 'S/ ' + Math.round(n).toLocaleString('es-PE'); }
 function calcSim() {
-  const precio   = parseFloat(document.getElementById('simPrecio').value) || 0;
+  const precio    = parseFloat(document.getElementById('simPrecio').value) || 0;
   const pctInicial = parseFloat(document.getElementById('simCuota').value) || 20;
-  const plazo    = parseFloat(document.getElementById('simPlazo').value) || 20;
+  const plazo     = parseFloat(document.getElementById('simPlazo').value) || 20;
   const tasaAnual = parseFloat(document.getElementById('simTasa').value) || 9.5;
-  const inicial  = precio * pctInicial / 100;
-  const monto    = precio - inicial;
-  const r        = (tasaAnual / 100) / 12;
-  const n        = plazo * 12;
-  const cuota    = monto > 0 && r > 0 ? monto * r * Math.pow(1+r,n) / (Math.pow(1+r,n)-1) : 0;
-  document.getElementById('simCuotaMes').textContent  = fmtSol(cuota) + '/mes';
-  document.getElementById('simTotal').textContent     = fmtSol(precio);
-  document.getElementById('simInicial').textContent   = fmtSol(inicial) + ` (${pctInicial}%)`;
-  document.getElementById('simFinanciar').textContent = fmtSol(monto);
-  document.getElementById('simTotalPagar').textContent= fmtSol(cuota * n + inicial);
-  // sync ranges
+  const inicial   = precio * pctInicial / 100;
+  const monto     = precio - inicial;
+  const r         = (tasaAnual / 100) / 12;
+  const n         = plazo * 12;
+  const cuota     = monto > 0 && r > 0 ? monto * r * Math.pow(1+r,n) / (Math.pow(1+r,n)-1) : 0;
+  document.getElementById('simCuotaMes').textContent   = fmtSol(cuota) + '/mes';
+  document.getElementById('simTotal').textContent      = fmtSol(precio);
+  document.getElementById('simInicial').textContent    = fmtSol(inicial) + ` (${pctInicial}%)`;
+  document.getElementById('simFinanciar').textContent  = fmtSol(monto);
+  document.getElementById('simTotalPagar').textContent = fmtSol(cuota * n + inicial);
   document.getElementById('simPrecioRange').value = precio;
   document.getElementById('simCuotaRange').value  = pctInicial;
   document.getElementById('simPlazoRange').value  = plazo;
@@ -665,21 +790,16 @@ function calcSim() {
 }
 calcSim();
 
-// ── Form submit → WhatsApp
+// ── Form → WhatsApp
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  const nombre = this.querySelector('input[type=text]').value;
-  const tel = this.querySelector('input[type=tel]').value;
+  const nombre   = this.querySelector('input[type=text]').value;
+  const tel      = this.querySelector('input[type=tel]').value;
   const proyecto = this.querySelector('select').value;
-  const msg = `Hola, soy ${nombre}. Mi número es ${tel}. Me interesa: ${proyecto || 'consultar proyectos disponibles'}.`;
+  const dorm     = this.querySelector('input[name=dorm]:checked')?.value || 'no especificado';
+  const msg = `Hola, soy ${nombre}. Mi número es ${tel}. Me interesa: ${proyecto || 'consultar proyectos'}. Dormitorios: ${dorm}.`;
   window.open(`https://wa.me/51941719172?text=${encodeURIComponent(msg)}`, '_blank');
 });
-
-// Intersection observer for animations
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.project-card, .step, .testimonial, .pillar, .finance__card').forEach(el => observer.observe(el));
 </script>
 </body>
 </html>
