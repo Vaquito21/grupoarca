@@ -15,8 +15,7 @@
 <nav class="nav" id="nav">
   <div class="container nav__inner">
     <a href="#" class="nav__logo">
-      <div class="logo-mark">A</div>
-      <div class="logo-text">GRUPO <strong>ARCA</strong></div>
+      <img src="img/logo-blanco.png" alt="Grupo Arca" class="nav__logo-img" />
     </a>
     <ul class="nav__links" id="navLinks">
       <li><a href="#nosotros">Nosotros</a></li>
@@ -37,8 +36,8 @@
 <section class="hero" id="inicio">
   <div class="hero__media">
     <img
-      src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=85"
-      alt="Edificio moderno Grupo Arca Lima"
+      src="img/pacifico/fachada.jpg"
+      alt="Residencial Pacífico II - Grupo Arca"
       class="hero__img"
       loading="eager"
     />
@@ -101,7 +100,7 @@
     <div class="about__grid">
       <div class="about__img-col reveal">
         <div class="about__img-wrap">
-          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80" alt="Edificio Grupo Arca" class="about__img" />
+          <img src="img/pacifico/int3.jpg" alt="Residencial Pacífico II - Grupo Arca" class="about__img" />
           <div class="about__badge">
             <span class="badge__num">5</span>
             <span class="badge__text">años construyendo sueños</span>
@@ -164,97 +163,119 @@
       <p class="section__sub section__sub--light">Departamentos disponibles para entrega inmediata y en preventa en Lima.</p>
     </div>
 
-    <div class="project-filters reveal">
-      <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
-      <button class="filter-btn" data-filter="jesus-maria">Jesús María</button>
-      <button class="filter-btn" data-filter="san-borja">San Borja</button>
-      <button class="filter-btn" data-filter="miraflores">Miraflores</button>
-      <button class="filter-btn" data-filter="entrega">Entrega inmediata</button>
-      <button class="filter-btn" data-filter="preventa">Preventa</button>
-    </div>
+    <!-- Proyecto: Residencial Pacífico II -->
+    <div class="pacifico__layout reveal">
 
-    <div class="projects__grid">
-
-      <div class="project-card project-card--featured reveal" data-district="jesus-maria" data-status="entrega">
-        <div class="project-card__img-wrap">
-          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80" alt="Residencial Pacífico" />
-          <div class="project-card__img-overlay">
-            <button class="btn btn--gold" onclick="openLightbox(this.closest('.project-card__img-wrap'))">Ver fotos</button>
+      <!-- Fachada + info general -->
+      <div class="pacifico__main">
+        <div class="project-card project-card--hero">
+          <div class="project-card__img-wrap">
+            <img src="img/pacifico/fachada.jpg" alt="Residencial Pacífico II - Fachada" />
+            <div class="project-card__img-overlay">
+              <button class="btn btn--gold" onclick="openGallery()">Ver galería</button>
+            </div>
+            <span class="project-card__badge">Entrega inmediata</span>
+            <span class="project-card__badge project-card__badge--alert">2 dptos disponibles</span>
           </div>
-          <span class="project-card__badge">Entrega inmediata</span>
-          <span class="project-card__badge project-card__badge--alert">4 últimos depas</span>
-        </div>
-        <div class="project-card__body">
-          <p class="project-card__district">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Jesús María
-          </p>
-          <h3 class="project-card__name">Residencial Pacífico</h3>
-          <p class="project-card__desc">Departamentos de 1 a 3 dormitorios con opción Duplex y Triplex. Financiamiento con Scotiabank.</p>
-          <div class="project-card__features">
-            <span>1–3 dorm.</span>
-            <span>Duplex / Triplex</span>
-            <span>Entrega ya</span>
-          </div>
-          <div class="project-card__footer">
-            <div class="project-card__price">Desde <strong>S/ 350,000</strong></div>
-            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20Residencial%20Pacífico%20en%20Jesús%20María" class="btn btn--gold" target="_blank">Ver detalles</a>
+          <div class="project-card__body">
+            <p class="project-card__district">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Jesús María, Lima
+            </p>
+            <h3 class="project-card__name">Residencial Pacífico II</h3>
+            <p class="project-card__desc">Edificio de 10 departamentos con 10 estacionamientos en Jesús María. Acabados de primera y financiamiento con los principales bancos del país.</p>
+            <div class="project-card__specs">
+              <div class="spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                <span>10 departamentos</span>
+              </div>
+              <div class="spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                <span>10 estacionamientos</span>
+              </div>
+              <div class="spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Entrega inmediata</span>
+              </div>
+              <div class="spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                <span>Scotiabank · BCP · Interbank</span>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <div class="project-card__price">Desde <strong>S/ 350,000</strong></div>
+              <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20Residencial%20Pacífico%20II%20en%20Jesús%20María" class="btn btn--gold" target="_blank">Cotizar ahora</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="project-card reveal" data-district="san-borja" data-status="preventa">
-        <div class="project-card__img-wrap">
-          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=80" alt="Edificio Arca Premium San Borja" />
-          <div class="project-card__img-overlay">
-            <button class="btn btn--gold" onclick="openLightbox(this.closest('.project-card__img-wrap'))">Ver fotos</button>
-          </div>
-          <span class="project-card__badge project-card__badge--green">Preventa</span>
-        </div>
-        <div class="project-card__body">
-          <p class="project-card__district">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            San Borja
-          </p>
-          <h3 class="project-card__name">Edificio Arca Premium</h3>
-          <p class="project-card__desc">Departamentos de 2 y 3 dormitorios con vista al parque. Lobby, ascensor y seguridad 24h.</p>
-          <div class="project-card__features">
-            <span>2–3 dorm.</span>
-            <span>75–110 m²</span>
-            <span>Estac. incluido</span>
-          </div>
-          <div class="project-card__footer">
-            <div class="project-card__price">Desde <strong>USD 145,000</strong></div>
-            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20Edificio%20Arca%20Premium%20en%20San%20Borja" class="btn btn--outline-gold" target="_blank">Ver detalles</a>
-          </div>
-        </div>
-      </div>
+      <!-- Dptos disponibles + galería -->
+      <div class="pacifico__right">
+        <h3 class="avail__title">Departamentos disponibles</h3>
+        <div class="avail__cards">
 
-      <div class="project-card reveal" data-district="miraflores" data-status="preventa">
-        <div class="project-card__img-wrap">
-          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&q=80" alt="Residencial Arca Miraflores" />
-          <div class="project-card__img-overlay">
-            <button class="btn btn--gold" onclick="openLightbox(this.closest('.project-card__img-wrap'))">Ver fotos</button>
+          <div class="avail-card">
+            <div class="avail-card__header">
+              <div class="avail-card__tag">Flat · 2 dormitorios</div>
+              <div class="avail-card__floor">Piso 3</div>
+            </div>
+            <h4 class="avail-card__name">Dpto. 301</h4>
+            <div class="avail-card__meta">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="1"/></svg>
+                61 m²
+              </span>
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                2 dorm.
+              </span>
+              <span>Flat</span>
+            </div>
+            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20el%20Dpto%20301%20(flat%202%20dorm.,%2061m²)%20en%20Residencial%20Pacífico%20II" class="btn btn--green btn--full" target="_blank">Consultar precio</a>
           </div>
-          <span class="project-card__badge project-card__badge--green">Preventa</span>
+
+          <div class="avail-card avail-card--featured">
+            <div class="avail-card__header">
+              <div class="avail-card__tag avail-card__tag--gold">Dúplex · 3 dormitorios</div>
+              <div class="avail-card__floor">Piso 6</div>
+            </div>
+            <h4 class="avail-card__name">Dpto. 602</h4>
+            <div class="avail-card__meta">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="1"/></svg>
+                113 m²
+              </span>
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                3 dorm.
+              </span>
+              <span>Dúplex</span>
+            </div>
+            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20el%20Dpto%20602%20(dúplex%203%20dorm.,%20113m²)%20en%20Residencial%20Pacífico%20II" class="btn btn--gold btn--full" target="_blank">Consultar precio</a>
+          </div>
+
         </div>
-        <div class="project-card__body">
-          <p class="project-card__district">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Miraflores
-          </p>
-          <h3 class="project-card__name">Residencial Arca Miraflores</h3>
-          <p class="project-card__desc">Edificio boutique de 10 pisos con rooftop. Vista a la ciudad y al Parque Kennedy.</p>
-          <div class="project-card__features">
-            <span>2–3 dorm.</span>
-            <span>82–110 m²</span>
-            <span>Rooftop</span>
+
+        <div class="gallery__grid" style="margin-top:24px">
+          <div class="gallery__item" onclick="openLightboxImg('img/pacifico/cocina.jpg')">
+            <img src="img/pacifico/cocina.jpg" alt="Cocina" />
+            <div class="gallery__hover">Ver foto</div>
           </div>
-          <div class="project-card__footer">
-            <div class="project-card__price">Desde <strong>USD 220,000</strong></div>
-            <a href="https://wa.me/51941719172?text=Hola,%20me%20interesa%20Residencial%20Arca%20Miraflores" class="btn btn--outline-gold" target="_blank">Ver detalles</a>
+          <div class="gallery__item" onclick="openLightboxImg('img/pacifico/int1.jpg')">
+            <img src="img/pacifico/int1.jpg" alt="Interior" />
+            <div class="gallery__hover">Ver foto</div>
+          </div>
+          <div class="gallery__item" onclick="openLightboxImg('img/pacifico/int2.jpg')">
+            <img src="img/pacifico/int2.jpg" alt="Interior" />
+            <div class="gallery__hover">Ver foto</div>
+          </div>
+          <div class="gallery__item" onclick="openLightboxImg('img/pacifico/int4.jpg')">
+            <img src="img/pacifico/int4.jpg" alt="Interior" />
+            <div class="gallery__hover">Ver foto</div>
           </div>
         </div>
+        <p class="gallery__caption">Fotos reales del proyecto · Jesús María</p>
       </div>
 
     </div>
@@ -570,9 +591,7 @@
         <label>Proyecto de interés</label>
         <select>
           <option value="">Selecciona un proyecto</option>
-          <option>Residencial Pacífico – Jesús María</option>
-          <option>Edificio Arca Premium – San Borja</option>
-          <option>Residencial Arca Miraflores</option>
+          <option>Residencial Pacífico II – Jesús María</option>
           <option>No sé aún, necesito asesoría</option>
         </select>
       </div>
@@ -596,8 +615,7 @@
   <div class="container footer__inner">
     <div class="footer__brand">
       <a href="#" class="footer__logo">
-        <div class="logo-mark">A</div>
-        <div class="logo-text" style="color:white">GRUPO <strong>ARCA</strong></div>
+        <img src="img/logo-blanco.png" alt="Grupo Arca" class="footer__logo-img" />
       </a>
       <p>Construimos hogares con calidad, puntualidad y compromiso para las familias peruanas.</p>
       <div class="footer__social">
@@ -615,9 +633,8 @@
     <div class="footer__col">
       <h4>Proyectos</h4>
       <ul>
-        <li><a href="#proyectos">Residencial Pacífico</a></li>
-        <li><a href="#proyectos">Edificio Arca Premium</a></li>
-        <li><a href="#proyectos">Residencial Miraflores</a></li>
+        <li><a href="#proyectos">Residencial Pacífico II</a></li>
+        <li><a href="#proyectos">Jesús María, Lima</a></li>
       </ul>
     </div>
     <div class="footer__col">
@@ -750,10 +767,19 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 // ── Lightbox
 function openLightbox(wrap) {
   const img = wrap.querySelector('img');
-  document.getElementById('lightbox-img').src = img.src.replace(/w=\d+/, 'w=1400');
+  openLightboxImg(img.src);
+}
+function openLightboxImg(src) {
+  document.getElementById('lightbox-img').src = src;
   const lb = document.getElementById('lightbox');
   lb.style.display = 'flex';
   document.body.style.overflow = 'hidden';
+}
+const galleryImgs = ['img/pacifico/fachada.jpg','img/pacifico/cocina.jpg','img/pacifico/int1.jpg','img/pacifico/int2.jpg','img/pacifico/int3.jpg','img/pacifico/int4.jpg'];
+let galleryIdx = 0;
+function openGallery() {
+  galleryIdx = 0;
+  openLightboxImg(galleryImgs[0]);
 }
 function closeLightbox() {
   document.getElementById('lightbox').style.display = 'none';
